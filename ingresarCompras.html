@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <h6 >
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito de compras</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js"></script>
+    </h6>
+</head>
+
+    <body class="bodyCompras">
+
+    <div class="container"></div>
+    <nav class="carrito"  >
+        <h1 id="cantidadCarrito" class="cantidadCarrito" >  </h1>
+        <img onclick="abrirCarrito()" style="cursor: pointer;" width="5%" height="5%" src="img/anadir-al-carrito.png" alt="">
+        
+    </nav>
+    <nav>
+        <button class="botonPago">
+        
+            <link rel="stylesheet" href="style.css">
+            <a class="botonPago" href="paginaDePago.html">PAGAR</a>
+        </button> 
+    </nav>
+    <h1>Eventos disponibles</h1>
+    
+    <div class="grid">
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/balon 1.jpg">
+            <div class="info">
+                <h3 id="nombreKiss" >Balon </h3>
+                <p id="fechaKiss" >Fecha de entrega 4 días hábiles</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p id="precioKiss" >COP $ 40.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p id="tarjetaKiss" >COP $ 37.000.oo</p>
+                </div>
+                <button onclick="añadirCarritoKiss()" class="jello" >Agregar al carrito</button>
+            </div>
+        </div>
+        
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/eliptica.jpg">
+            <div class="info">
+                <h3 id="nombreRBD" >Eliptica</h3>
+                <p id="fechaRBD" >10 días hábiles para la entrega</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p id="precioRBD" >COP $ 870.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p id="tarjetaRBD" >COP $ 650.000.oo</p>
+                </div>
+                <button onclick="añadirCarritoRBD()" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/pressbanca.jpg">
+            <div class="info">
+                <h3 id="nombreKarol" >10 días hábiles para la entrega"</h3>
+                <p id="fechaKarol" >rackpesas</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p id="precioKarol" >COP $ 1.580.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p id="tarjetaKarol" >COP $ 1.240.000.oo</p>
+                </div>
+                <button onclick="añadirCarritoKarol()" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/multifuncional.jpg">
+            <div class="info">
+                <h3 id="nombreClandestinos" >multifuncional</h3>
+                <p id="fechaClandestinos" >disponible dentro de 10 días</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p id="precioClandestinos" >COP $ 750.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p id="tarjetaClandestinos" >COP $ 700.000.oo</p>
+                </div>
+                <button onclick="añadirCarritoClandestinos()" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/istockphoto-531520849-612x612.jpg">
+            <div class="info">
+                <h3 id="nombreRicardo" > pesas.</h3>
+                <p id="fechaRicardo" >solo envios nacionales</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p id="precioRicardo" >COP $ 120.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p id="tarjetaRicardo" >COP $ 90.000.oo</p>
+                </div>
+                <button onclick="añadirCarritoRicardo()" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="items">
+            <img src="img/imagenesCatalogoVirtual/multi2.jpg">
+            <div class="info">
+                <h3 id="nombrePamela" > multifuncional</h3>
+                <p id="fechaPamela" >El mejor del mercado</p>
+                <div class="precio">
+                    <p>Valor</p>
+                    <p id="precioPamela" >COP $ 120.000.oo</p>
+                    <p>Pagando con tarjeta de crédito</p>
+                    <p id="tarjetaPamela" >COP $ 90.000.oo</p>
+                </div>
+                <button onclick="añadirCarritoPamela()" class="jello">Agregar al carrito</button>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/estantePesas.jpg">
+                <div class="info">
+                    <h3 id="nombreKiss" >Estante para pesas </h3>
+                    <p id="fechaKiss" >Fecha de entrega 20 días hábiles</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioKiss" >COP $ 440.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaKiss" >COP $ 437.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoKiss()" class="jello" >Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/bancoParaEjercicio.png">
+                <div class="info">
+                    <h3 id="nombreRBD" >Banco para hacer ejercicio</h3>
+                    <p id="fechaRBD" >10 días hábiles para la entrega</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioRBD" >COP $ 870.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaRBD" >COP $ 650.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoRBD()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/BasculaColorNegro.jpg">
+                <div class="info">
+                    <h3 id="nombreKarol" >10 días hábiles para la entrega"</h3>
+                    <p id="fechaKarol" >rackpesas</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioKarol" >COP $ 1.580.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaKarol" >COP $ 1.240.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoKarol()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaDigital.jpg">
+                <div class="info">
+                    <h3 id="nombreClandestinos" >bascula digital</h3>
+                    <p id="fechaClandestinos" >disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioClandestinos" >COP $ 50.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaClandestinos" >COP $ 40.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoClandestinos()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/rueda de pesa.jpg">
+                <div class="info">
+                    <h3 id="nombreRicardo" > pesas.</h3>
+                    <p id="fechaRicardo" >solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioRicardo" >COP $ 30.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaRicardo" >COP $ 25.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoRicardo()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaClasica.jpg">
+                <div class="info">
+                    <h3 id="nombrePamela" > Bascula clasica</h3>
+                    <p id="fechaPamela" >El mejor del mercado</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioPamela" >COP $ 220.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaPamela" >COP $ 190.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoPamela()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonFutbolADIDAS.avif">
+                <div class="info">
+                    <h3 id="nombreClandestinos" >Balón adidas</h3>
+                    <p id="fechaClandestinos" >disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioClandestinos" >COP $ 750.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaClandestinos" >COP $ 700.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoClandestinos()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonfutbolverde.jpg">
+                <div class="info">
+                    <h3 id="nombreRicardo" > balon de futbol.</h3>
+                    <p id="fechaRicardo" >solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioRicardo" >COP $ 30.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaRicardo" >COP $ 25.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoRicardo()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonBasketball.jpg">
+                <div class="info">
+                    <h3 id="nombrePamela" > balon de basketball wilson</h3>
+                    <p id="fechaPamela" >El mejor del mercado</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioPamela" >COP $ 220.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaPamela" >COP $ 190.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoPamela()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/BasculaColorNegro.jpg">
+                <div class="info">
+                    <h3 id="nombreKarol" >10 días hábiles para la entrega"</h3>
+                    <p id="fechaKarol" >rackpesas</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioKarol" >COP $ 1.580.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaKarol" >COP $ 1.240.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoKarol()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaDigital.jpg">
+                <div class="info">
+                    <h3 id="nombreClandestinos" >bascula digital</h3>
+                    <p id="fechaClandestinos" >disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioClandestinos" >COP $ 50.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaClandestinos" >COP $ 40.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoClandestinos()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/rueda de pesa.jpg">
+                <div class="info">
+                    <h3 id="nombreRicardo" > pesas.</h3>
+                    <p id="fechaRicardo" >solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioRicardo" >COP $ 30.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaRicardo" >COP $ 25.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoRicardo()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/basculaClasica.jpg">
+                <div class="info">
+                    <h3 id="nombrePamela" > Bascula clasica</h3>
+                    <p id="fechaPamela" >El mejor del mercado</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioPamela" >COP $ 220.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaPamela" >COP $ 190.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoPamela()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonFutbolADIDAS.avif">
+                <div class="info">
+                    <h3 id="nombreClandestinos" >Balón adidas</h3>
+                    <p id="fechaClandestinos" >disponible dentro de 10 días</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioClandestinos" >COP $ 750.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaClandestinos" >COP $ 700.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoClandestinos()" class="jello">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="img/imagenesCatalogoVirtual/balonfutbolverde.jpg">
+                <div class="info">
+                    <h3 id="nombreRicardo" > balon de futbol.</h3>
+                    <p id="fechaRicardo" >solo envios nacionales</p>
+                    <div class="precio">
+                        <p>Valor</p>
+                        <p id="precioRicardo" >COP $ 30.000.oo</p>
+                        <p>Pagando con tarjeta de crédito</p>
+                        <p id="tarjetaRicardo" >COP $ 25.000.oo</p>
+                    </div>
+                    <button onclick="añadirCarritoRicardo()" class="jello">Agregar al carrito</button>
+                </div>
+    </body>
+
+</html>
